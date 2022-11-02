@@ -1,0 +1,13 @@
+.contasd{
+    width: 500px;
+    height: 65px;
+    background-color: rgb(41, 77, 108);
+    margin: 1em 0;
+    padding: .5em 1.2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid aliceblue;
+    border-radius: .8em;
+    cursor: pointer;
+}
