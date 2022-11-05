@@ -2,7 +2,7 @@ import React from "react";
 import "../stylesheet/ContenedorTareas.css"
 import { Tareas } from "./Tareas";
 
-export function ContenedorTareas({tarea}) {
+export function ContenedorTareas(/* {tarea} */) {
   return (
     <div className="tarea-contenedor">
       <div className="ind-tarea">
@@ -10,7 +10,7 @@ export function ContenedorTareas({tarea}) {
         <input placeholder="Ingrese su tarea"></input>
         <button>Archivar</button>
       </div>
-      <Tareas />
+      <Tareas tareas="Pasear al perro"/>
       </div>
     </div>
   );

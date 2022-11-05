@@ -17,10 +17,9 @@ button {
   margin: 1.4em 0;
   padding: 0.5em 1.4em;
   border-radius: 10px;
-  color: rgb(184, 95, 65);
 }
 .agregar button {
-  background-color: rgb(184, 95, 65);
+  background-color: rgb(47, 131, 144);
   color: aliceblue;
   cursor: pointer;
 }
