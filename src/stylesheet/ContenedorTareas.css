@@ -11,15 +11,10 @@
   justify-content: center;
   align-items: flex-start;
 }
-.agregar input,
-button {
-  font-size: 1rem;
-  margin: 1.4em 0;
-  padding: 0.5em 1.4em;
-  border-radius: 10px;
-}
-.agregar button {
-  background-color: rgb(47, 131, 144);
-  color: aliceblue;
-  cursor: pointer;
+
+.tareas-conjunto{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1em;
 }

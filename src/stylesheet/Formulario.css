@@ -1,0 +1,28 @@
+.tarea-form{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.tarea-form input,
+button {
+  font-size: 1rem;
+  margin: 1.4em .5em;
+  padding: .7em 1.4em;
+  border: none;
+  border-radius: 10px;
+}
+.tarea-form .tarea-descripcion{
+    width: 350px;
+    padding: .7em 1.4em .7em 1em;
+    outline: none;
+}
+.tarea-form button {
+  background-color: rgb(47, 131, 144);
+  color: aliceblue;
+  cursor: pointer;
+  outline: none;
+
+}

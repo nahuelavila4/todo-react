@@ -2,11 +2,20 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Maven Pro', 'Roboto', sans-serif;
 }
 
 body {
-  background-image: url("./img/fondo.jpg");
+  background-image: linear-gradient(
+      0deg,
+      rgba(25, 25, 25, 0.399),
+      rgba(222, 138, 59, 0.25)
+    ),
+    url("./img/fondo.jpg");
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 
 h1 {
@@ -33,9 +42,15 @@ h4 {
 
 .job {
   padding: 1em 2.5em;
-  background-color: aliceblue;
+  background-color: rgb(236, 168, 104);
   border-radius: 5px;
+  color: aliceblue;
 
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+.job h3{
+  font-family: "Caveat", cursive;
 }
