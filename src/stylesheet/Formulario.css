@@ -1,34 +1,39 @@
-.tarea-form{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+.tarea-form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .tarea-form input,
 button {
-  font-size: 1rem;
-  margin: 0 .5em;
-  padding: .7em 1.4em;
+  font-size: 1.2rem;
+  margin: 0 0.5em;
+  margin-top: 1.2em;
+  padding: 0.7em 1.4em;
   border: none;
   border-radius: 10px;
 }
-.tarea-form input{
-  margin-top: 1.2em;
+
+.tarea-form .tarea-descripcion {
+  width: 100%;
+  padding: 0.7em 1.4em 0.7em 1em;
+  outline: none;
 }
-.tarea-form button{
-  margin-top: .7em;
-}
-.tarea-form .tarea-descripcion{
-    width: 100%;
-    padding: .7em 1.4em .7em 1em;
-    outline: none;
-}
+
 .tarea-form button {
   background-color: rgb(47, 131, 144);
   color: aliceblue;
   cursor: pointer;
   outline: none;
+}
 
+/* Media Query para formulario */
+@media (max-width: 650px){
+  .tarea-form{
+    flex-wrap: wrap;
+  }
+  .tarea-form button{
+    width: 100%;
+  }
 }
