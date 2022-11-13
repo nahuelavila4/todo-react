@@ -16,6 +16,7 @@ export function ContenedorTareas() {
       tarea.texto = tarea.texto.trim();
       const tareasActualizadas = [tarea, ...tareas];
       setTareas(tareasActualizadas);
+      console.log(tarea)
     }
   };
 
@@ -25,17 +26,28 @@ export function ContenedorTareas() {
     setTareas(tareasActualizadas);
   };
 
+  const completarTarea = id => {
+    const tareasActualizadas = tareas.map(tarea => {
+      if(tarea.id === id){
+        tarea.completada = !tarea.completada;
+      }
+      return tarea;
+    });
+    setTareas(tareasActualizadas)
+  }
+
   return (
     <div className="tarea-contenedor">
       {/* Envia funcion a comp donde se hace la tarea */}
-      <div>
+      <div className="zxc">
         <TareaFormulario onSubmit={agregarTareas} />
         <div className="tareas-conjunto">
           {tareas.map((tarea) => (
             <Tareas
-              eliminarTarea={eliminarTarea}
               key={tarea.id}
               id={tarea.id}
+              completarTarea={completarTarea}
+              eliminarTarea={eliminarTarea}
               texto={tarea.texto}
               completada={tarea.completada}
             />

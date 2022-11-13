@@ -1,7 +1,7 @@
 .contad{
-    width: 500px;
     height: 65px;
     background-color: rgb(41, 77, 108);
+    color: aliceblue;
     margin: 1em 0;
     padding: .5em 1.2em;
     display: flex;
@@ -21,11 +21,11 @@
 .tarea-icono{
     width: 1.4rem;
     height: 1.4rem;
-    margin: 1em;
+    margin: .8em;
 }
 
 /* Tarea completada */
-.contad.completada{
+.completada{
     background-color: rgb(47, 131, 144);
     text-decoration: line-through;
 }

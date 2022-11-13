@@ -37,7 +37,9 @@ h4 {
   justify-content: center;
   align-items: center;
 }
-
+.tr{
+  width: 80%;
+}
 /* Titulo Main.js*/
 
 .job {
